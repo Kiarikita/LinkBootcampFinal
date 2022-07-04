@@ -1,0 +1,12 @@
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Core\bin\Debug\net6.0\FinalProject.Core.deps.json
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Core\bin\Debug\net6.0\FinalProject.Core.dll
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Core\bin\Debug\net6.0\FinalProject.Core.pdb
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Core\obj\Debug\net6.0\FinalProject.Core.csproj.AssemblyReference.cache
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Core\obj\Debug\net6.0\FinalProject.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Core\obj\Debug\net6.0\FinalProject.Core.AssemblyInfoInputs.cache
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Core\obj\Debug\net6.0\FinalProject.Core.AssemblyInfo.cs
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Core\obj\Debug\net6.0\FinalProject.Core.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Core\obj\Debug\net6.0\FinalProject.Core.dll
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Core\obj\Debug\net6.0\refint\FinalProject.Core.dll
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Core\obj\Debug\net6.0\FinalProject.Core.pdb
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Core\obj\Debug\net6.0\ref\FinalProject.Core.dll

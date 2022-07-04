@@ -1,0 +1,15 @@
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Repository\bin\Debug\net6.0\FinalProject.Repository.deps.json
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Repository\bin\Debug\net6.0\FinalProject.Repository.dll
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Repository\bin\Debug\net6.0\FinalProject.Repository.pdb
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Repository\bin\Debug\net6.0\FinalProject.Core.dll
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Repository\bin\Debug\net6.0\FinalProject.Core.pdb
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Repository\obj\Debug\net6.0\FinalProject.Repository.csproj.AssemblyReference.cache
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Repository\obj\Debug\net6.0\FinalProject.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Repository\obj\Debug\net6.0\FinalProject.Repository.AssemblyInfoInputs.cache
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Repository\obj\Debug\net6.0\FinalProject.Repository.AssemblyInfo.cs
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Repository\obj\Debug\net6.0\FinalProject.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Repository\obj\Debug\net6.0\FinalProject.Repository.csproj.CopyComplete
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Repository\obj\Debug\net6.0\FinalProject.Repository.dll
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Repository\obj\Debug\net6.0\refint\FinalProject.Repository.dll
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Repository\obj\Debug\net6.0\FinalProject.Repository.pdb
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Repository\obj\Debug\net6.0\ref\FinalProject.Repository.dll

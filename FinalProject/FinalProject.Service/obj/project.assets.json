@@ -1,0 +1,112 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "FinalProject.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/FinalProject.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FinalProject.Core.dll": {}
+        }
+      },
+      "FinalProject.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FinalProject.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FinalProject.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FinalProject.Repository.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FinalProject.Core/1.0.0": {
+      "type": "project",
+      "path": "../FinalProject.Core/FinalProject.Core.csproj",
+      "msbuildProject": "../FinalProject.Core/FinalProject.Core.csproj"
+    },
+    "FinalProject.Repository/1.0.0": {
+      "type": "project",
+      "path": "../FinalProject.Repository/FinalProject.Repository.csproj",
+      "msbuildProject": "../FinalProject.Repository/FinalProject.Repository.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "FinalProject.Repository >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Asus\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Asus\\source\\repos\\LinkBootcampFinal\\FinalProject\\FinalProject.Service\\FinalProject.Service.csproj",
+      "projectName": "FinalProject.Service",
+      "projectPath": "C:\\Users\\Asus\\source\\repos\\LinkBootcampFinal\\FinalProject\\FinalProject.Service\\FinalProject.Service.csproj",
+      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Asus\\source\\repos\\LinkBootcampFinal\\FinalProject\\FinalProject.Service\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\Asus\\source\\repos\\LinkBootcampFinal\\FinalProject\\FinalProject.Repository\\FinalProject.Repository.csproj": {
+              "projectPath": "C:\\Users\\Asus\\source\\repos\\LinkBootcampFinal\\FinalProject\\FinalProject.Repository\\FinalProject.Repository.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

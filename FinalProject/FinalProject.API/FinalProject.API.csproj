@@ -17,4 +17,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FinalProject.Service\FinalProject.Service.csproj" />
+  </ItemGroup>
+
 </Project>

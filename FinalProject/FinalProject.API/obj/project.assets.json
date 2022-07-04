@@ -79,6 +79,42 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "FinalProject.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/FinalProject.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FinalProject.Core.dll": {}
+        }
+      },
+      "FinalProject.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FinalProject.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FinalProject.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FinalProject.Repository.dll": {}
+        }
+      },
+      "FinalProject.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FinalProject.Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FinalProject.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FinalProject.Service.dll": {}
+        }
       }
     }
   },
@@ -287,10 +323,26 @@
         "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "FinalProject.Core/1.0.0": {
+      "type": "project",
+      "path": "../FinalProject.Core/FinalProject.Core.csproj",
+      "msbuildProject": "../FinalProject.Core/FinalProject.Core.csproj"
+    },
+    "FinalProject.Repository/1.0.0": {
+      "type": "project",
+      "path": "../FinalProject.Repository/FinalProject.Repository.csproj",
+      "msbuildProject": "../FinalProject.Repository/FinalProject.Repository.csproj"
+    },
+    "FinalProject.Service/1.0.0": {
+      "type": "project",
+      "path": "../FinalProject.Service/FinalProject.Service.csproj",
+      "msbuildProject": "../FinalProject.Service/FinalProject.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "FinalProject.Service >= 1.0.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.15.1",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
@@ -325,7 +377,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Asus\\source\\repos\\LinkBootcampFinal\\FinalProject\\FinalProject.Service\\FinalProject.Service.csproj": {
+              "projectPath": "C:\\Users\\Asus\\source\\repos\\LinkBootcampFinal\\FinalProject\\FinalProject.Service\\FinalProject.Service.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -365,7 +421,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
