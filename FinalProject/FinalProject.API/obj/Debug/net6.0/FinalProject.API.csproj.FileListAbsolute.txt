@@ -31,3 +31,9 @@ C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.API\obj\D
 C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.API\obj\Debug\net6.0\FinalProject.API.pdb
 C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.API\obj\Debug\net6.0\FinalProject.API.genruntimeconfig.cache
 C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.API\obj\Debug\net6.0\ref\FinalProject.API.dll
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.API\bin\Debug\net6.0\Npgsql.dll
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.API\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

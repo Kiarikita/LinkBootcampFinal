@@ -13,3 +13,5 @@ C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Repositor
 C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Repository\obj\Debug\net6.0\refint\FinalProject.Repository.dll
 C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Repository\obj\Debug\net6.0\FinalProject.Repository.pdb
 C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Repository\obj\Debug\net6.0\ref\FinalProject.Repository.dll
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Repository\bin\Debug\net6.0\FinalProject.Repository.runtimeconfig.json
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.Repository\obj\Debug\net6.0\FinalProject.Repository.genruntimeconfig.cache
