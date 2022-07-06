@@ -5,11 +5,16 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinalProject.API", "FinalProject.API\FinalProject.API.csproj", "{52A35486-9792-437A-B370-EFB24559FDC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalProject.Core", "FinalProject.Core\FinalProject.Core.csproj", "{123DB96A-68C1-4F6D-8D1A-4E0AE810B79D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinalProject.Core", "FinalProject.Core\FinalProject.Core.csproj", "{123DB96A-68C1-4F6D-8D1A-4E0AE810B79D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalProject.Repository", "FinalProject.Repository\FinalProject.Repository.csproj", "{F0D094D6-E1E1-47CD-9840-B6CA1A6C9EEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinalProject.Repository", "FinalProject.Repository\FinalProject.Repository.csproj", "{F0D094D6-E1E1-47CD-9840-B6CA1A6C9EEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalProject.Service", "FinalProject.Service\FinalProject.Service.csproj", "{203A1C9B-B5E1-460D-9AE4-B999ABF5F73B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinalProject.Service", "FinalProject.Service\FinalProject.Service.csproj", "{203A1C9B-B5E1-460D-9AE4-B999ABF5F73B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AB7C6408-D5BC-4D52-A02D-8489C0347660}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

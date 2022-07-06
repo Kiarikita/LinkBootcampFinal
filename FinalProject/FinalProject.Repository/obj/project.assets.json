@@ -756,6 +756,7 @@
       "FinalProject.Core >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.6",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.6",
+      "Npgsql >= 6.0.5",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.5"
     ]
   },
@@ -815,6 +816,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[6.0.6, )"
+          },
+          "Npgsql": {
+            "target": "Package",
+            "version": "[6.0.5, )"
           },
           "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",

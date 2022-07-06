@@ -37,3 +37,5 @@ C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.API\bin\D
 C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.API\bin\Debug\net6.0\Npgsql.dll
 C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.API\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.API\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Asus\source\repos\LinkBootcampFinal\FinalProject\FinalProject.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
