@@ -1,7 +1,7 @@
 # Link Bilgisayar Bootcamp Project / Müşteri Kayıt Rehberi Uygulaması
 **Proje:**
--	Müşterilerimizin tüm kayıtlarını tutalabilecek,
--   İstenilen özel koşullara göre rapor oluşturalabilecek(aylık, haftalık vb),
+-	Müşterilerimizin tüm kayıtlarını tutulabilecek,
+-   İstenilen özel koşullara göre rapor oluşturulabilecek(aylık, haftalık vb),
 -	Raporları istenildiği takdirde indirmesi sağlanacak,
 -	Raporlar excel olarak aktarılabilecek 
 
