@@ -6,14 +6,14 @@ namespace FinalProject.Core.Services
     {
         Task<T> GetByIdAsync(int id);
 
-        IQueryable<T> GetAll();
+        Task<IEnumerable<T>> GetAllAsync();
 
         IQueryable<T> Where(Expression<Func<T, bool>> expression);
 
         Task<bool> AnyAsync(Expression<Func<T, bool>> expression);
 
-        Task AddAsync(T entity);
-        Task AddRangeAsync(IEnumerable<T> entities);
+        Task<T> AddAsync(T entity); //geriye eklenen entityi dönsün
+        Task<IEnumerable<T>> AddRangeAsync(IEnumerable<T> entities);
 
         Task UpdateAsync(T entity);
 
