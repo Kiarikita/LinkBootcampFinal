@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "cKzFut8U1P5vf2KcIfLPYKSOb0TQ6lmzcIkoQPtz4kgRSEwinKrhDvgajCqXIkuQSg6TXdnSBDCVK+jRGvOAlg==",
+  "dgSpecHash": "eWU/CXu/lCkVuf4E4BJK1nln8MwnCAZvO//BnlA7IDB/o79GtarAAotoAXauIBZ8m8OOLxbfMY+unNLVraNygA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Asus\\source\\repos\\LinkBootcampFinal\\FinalProject\\FinalProject.Service\\FinalProject.Service.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Asus\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.6\\microsoft.entityframeworkcore.6.0.6.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.6\\microsoft.entityframeworkcore.abstractions.6.0.6.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.6\\microsoft.entityframeworkcore.analyzers.6.0.6.nupkg.sha512",

@@ -26,9 +26,9 @@ namespace FinalProject.Core.Commercial
         public DateTime ActivityDate { get; set; }
 
         #endregion
-
+        //foreign key
         public int CustomerId { get; set; }
-
+        //simple navigation property
         public Customer Customer { get; set; }
 
 

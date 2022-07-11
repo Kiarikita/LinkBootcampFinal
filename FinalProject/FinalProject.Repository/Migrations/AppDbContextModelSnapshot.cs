@@ -117,13 +117,11 @@ namespace FinalProject.Repository.Migrations
 
             modelBuilder.Entity("FinalProject.Core.Commercial.CommercialActivity", b =>
                 {
-                    b.HasOne("FinalProject.Core.Customers.Customer", "Customer")
+                    b.HasOne("FinalProject.Core.Customers.Customer", null)
                         .WithMany("CommercialActivities")
                         .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Customer");
                 });
 
             modelBuilder.Entity("FinalProject.Core.Customers.Customer", b =>

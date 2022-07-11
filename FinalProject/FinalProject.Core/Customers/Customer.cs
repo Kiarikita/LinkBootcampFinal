@@ -39,6 +39,6 @@ namespace FinalProject.Core.Customers
 
         #endregion
         //navigation property : one-to-many relationship with commercial activity
-        public List<CommercialActivity> CommercialActivities { get; set; }
+        public List<CommercialActivity> CommercialActivities { get; set; } = new List<CommercialActivity>(); 
     }
 }
