@@ -1,7 +1,6 @@
-﻿using FinalProject.Core.Customers;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace FinalProject.Core.Commercial
+namespace FinalProject.Core.Models
 {
     public class CommercialActivity
     {

@@ -1,13 +1,15 @@
 ﻿using AutoMapper;
-using FinalProject.Core.Customers;
 using FinalProject.Core.DTOs;
+using FinalProject.Core.Models;
 using FinalProject.Core.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FinalProject.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "admin")]
     public class CustomersController : CustomBaseController
     {
         private readonly IMapper _mapper;
@@ -24,6 +26,7 @@ namespace FinalProject.API.Controllers
         /// </summary>
         /// <returns>List of Customer döndürür.</returns>
         [HttpGet]
+        [Authorize(Roles = "editor")]
         public async Task<IActionResult> All()
         {
             var customer = await _service.GetAllAsync();
@@ -51,6 +54,7 @@ namespace FinalProject.API.Controllers
         /// <param name="customer"></param>
         /// <returns></returns>
         [HttpPost()]
+        [Authorize(Roles = "editor")]
         public async Task<IActionResult> Save(CustomerDto customerDto)
         {
             var customer = await _service.AddAsync(_mapper.Map<Customer>(customerDto));
@@ -65,6 +69,7 @@ namespace FinalProject.API.Controllers
         /// <param name="customer"></param>
         /// <returns></returns>
         [HttpPut()]
+        [Authorize(Roles = "editor")]
         public async Task<IActionResult> Update(CustomerDto customerDto)
         {
             await _service.UpdateAsync(_mapper.Map<Customer>(customerDto));

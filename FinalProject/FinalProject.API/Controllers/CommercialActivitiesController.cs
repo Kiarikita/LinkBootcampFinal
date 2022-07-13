@@ -1,7 +1,8 @@
 ﻿using AutoMapper;
-using FinalProject.Core.Commercial;
 using FinalProject.Core.DTOs;
+using FinalProject.Core.Models;
 using FinalProject.Core.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,6 +10,7 @@ namespace FinalProject.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "admin")]
     public class CommercialActivitiesController : CustomBaseController
     {
         private readonly IMapper _mapper;
@@ -25,6 +27,7 @@ namespace FinalProject.API.Controllers
         /// </summary>
         /// <returns>List of Commercial Activities döndürür.</returns>
         [HttpGet]
+        [Authorize(Roles = "editor")]
         public async Task<IActionResult> All()
         {
             var commercial = await _service.GetAllAsync();
@@ -52,6 +55,7 @@ namespace FinalProject.API.Controllers
         /// <param name="commercial"></param>
         /// <returns></returns>
         [HttpPost()]
+        [Authorize(Roles = "editor")]
         public async Task<IActionResult> Save(CommercialActivityDto customerDto)
         {
             var commercial = await _service.AddAsync(_mapper.Map<CommercialActivity>(customerDto));
@@ -66,6 +70,7 @@ namespace FinalProject.API.Controllers
         /// <param name="commercial"></param>
         /// <returns></returns>
         [HttpPut()]
+        [Authorize(Roles = "editor")]
         public async Task<IActionResult> Update(CommercialActivityDto customerDto)
         {
             await _service.UpdateAsync(_mapper.Map<CommercialActivity>(customerDto));

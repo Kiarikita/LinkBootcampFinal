@@ -1,7 +1,6 @@
-﻿using FinalProject.Core.Commercial;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace FinalProject.Core.Customers
+namespace FinalProject.Core.Models
 {
     public class Customer
     {
@@ -39,6 +38,6 @@ namespace FinalProject.Core.Customers
 
         #endregion
         //navigation property : one-to-many relationship with commercial activity
-        public List<CommercialActivity> CommercialActivities { get; set; } = new List<CommercialActivity>(); 
+        public List<CommercialActivity> CommercialActivities { get; set; } = new List<CommercialActivity>();
     }
 }

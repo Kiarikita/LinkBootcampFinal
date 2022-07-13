@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
-using FinalProject.Core.Commercial;
-using FinalProject.Core.Customers;
 using FinalProject.Core.DTOs;
+using FinalProject.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

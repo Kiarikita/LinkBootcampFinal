@@ -1,16 +1,10 @@
-﻿using FinalProject.Core.Commercial;
-using FinalProject.Core.Customers;
-using FinalProject.Core.Users;
+﻿using FinalProject.Core.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FinalProject.Repository
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<AppUser, AppRole, string>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
@@ -21,6 +15,8 @@ namespace FinalProject.Repository
 
         public DbSet<CommercialActivity> CommercialActivities { get; set; }
 
-        public DbSet<User> Users { get; set; }
+
     }
+
+    
 }
