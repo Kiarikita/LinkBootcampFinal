@@ -2,23 +2,27 @@
 using FinalProject.Core.DTOs;
 using FinalProject.Core.Models;
 using FinalProject.Core.Services;
+using FinalProject.Service.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace FinalProject.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "admin")]
+    //[Authorize(Roles = "admin")]
     public class CustomersController : CustomBaseController
     {
         private readonly IMapper _mapper;
         private readonly IService<Customer> _service;
+        private readonly RabbitMQPublisher _rabbitMQPublisher;
 
-        public CustomersController(IService<Customer> service, IMapper mapper)
+        public CustomersController(IService<Customer> service, IMapper mapper, RabbitMQPublisher rabbitMQPublisher)
         {
             _service = service;
             _mapper = mapper;
+            _rabbitMQPublisher = rabbitMQPublisher;
         }
 
         /// <summary>
@@ -26,7 +30,7 @@ namespace FinalProject.API.Controllers
         /// </summary>
         /// <returns>List of Customer döndürür.</returns>
         [HttpGet]
-        [Authorize(Roles = "editor")]
+        [Authorize(Roles = "admin, editor")]
         public async Task<IActionResult> All()
         {
             var customer = await _service.GetAllAsync();
@@ -54,9 +58,28 @@ namespace FinalProject.API.Controllers
         /// <param name="customer"></param>
         /// <returns></returns>
         [HttpPost()]
-        [Authorize(Roles = "editor")]
-        public async Task<IActionResult> Save(CustomerDto customerDto)
+        [Authorize(Roles = "admin, editor")]
+        public async Task<IActionResult> Save(CustomerDto customerDto/*, IFormFile ImageFile*/)
         {
+            //if (ImageFile is { Length: > 0 })
+            //{
+            //    var randomImageName = Guid.NewGuid() + Path.GetExtension(ImageFile.FileName);
+
+
+            //    var path = Path.Combine(Directory.GetCurrentDirectory(), "images", randomImageName);
+
+
+            //    await using FileStream stream = new(path, FileMode.Create);
+
+
+            //    await ImageFile.CopyToAsync(stream);
+
+
+            //    _rabbitMQPublisher.Publish(new customerImageCreatedEvent() { ImageName = randomImageName });
+
+            //    customerDto.ImageURL = randomImageName;
+            //}
+
             var customer = await _service.AddAsync(_mapper.Map<Customer>(customerDto));
             var customersDto = _mapper.Map<CustomerDto>(customer);
             return CreateActionResult(CustomResponseDto<CustomerDto>.Success(201, customersDto));//201 created
@@ -69,7 +92,7 @@ namespace FinalProject.API.Controllers
         /// <param name="customer"></param>
         /// <returns></returns>
         [HttpPut()]
-        [Authorize(Roles = "editor")]
+        [Authorize(Roles = "admin, editor")]
         public async Task<IActionResult> Update(CustomerDto customerDto)
         {
             await _service.UpdateAsync(_mapper.Map<Customer>(customerDto));
@@ -84,6 +107,7 @@ namespace FinalProject.API.Controllers
         /// <returns></returns>
         // DELETE api/customers/id
         [HttpDelete("{id}")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Remove(int id)
         {
             var customer = await _service.GetByIdAsync(id);
@@ -91,6 +115,25 @@ namespace FinalProject.API.Controllers
             return CreateActionResult(CustomResponseDto<NoContentDto>.Success(204));
 
         }
+
+        /// <summary>
+        /// Tüm Müşterileri Siler
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        // DELETE api/customers
+        //[HttpDelete()]
+        //[Authorize(Roles = "admin")]
+        //public IActionResult RemoveAll(IEnumerable<int> existing)
+        //{
+        //    var profile = await _mapper.Include(x => x.Locations).FirstOrDefaultAsync(x => x.Id == id);
+
+        //    var existing = profile.Locations.Where(x => locationsIds.Contains(x.Id)).ToList();
+        //    _service.RemoveRange(0, existing.Count());
+
+
+        //    return CreateActionResult(CustomResponseDto<NoContentDto>.Success(204));
+        //}
     }
 
 }

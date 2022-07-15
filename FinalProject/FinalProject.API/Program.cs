@@ -5,6 +5,7 @@ using FinalProject.Core.UnitOfWork;
 using FinalProject.Repository;
 using FinalProject.Repository.Repositories;
 using FinalProject.Repository.UnitOfWork;
+using FinalProject.Service.BackgroundServices;
 using FinalProject.Service.Mapping;
 using FinalProject.Service.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -12,6 +13,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using RabbitMQ.Client;
 using System.Reflection;
 using System.Text;
 
@@ -31,7 +33,9 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped(typeof(IService<>), typeof(Service<>));
 builder.Services.AddAutoMapper(typeof(MapProfile));
-
+builder.Services.AddSingleton(sp => new ConnectionFactory() { Uri = new Uri(builder.Configuration.GetConnectionString("RabbitMQ")) });
+builder.Services.AddSingleton<RabbitMQClientService>();
+builder.Services.AddSingleton<RabbitMQPublisher>();
 builder.Services.AddDbContext<AppDbContext>(x =>
 {
     x.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"), option =>
@@ -61,7 +65,7 @@ builder.Services.AddAuthentication(options =>
         ClockSkew = TimeSpan.Zero
     };
 });
-
+builder.Services.AddHostedService<ImageWatermarkProcessBackgroundService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

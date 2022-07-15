@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FinalProject.Core.Models
 {
@@ -25,7 +27,9 @@ namespace FinalProject.Core.Models
 
         [Required(ErrorMessage = "Resim gerekli")]
         [Display(Name = "Resim")]
-        public string ImageURL { get; set; }
+        //[NotMapped]
+        public /*IFormFile*/ string ImageURL { get; set; }
+       
 
         [Required(ErrorMessage = "Telefon numarası gerekli")]
         [Display(Name = "Telefon")]
