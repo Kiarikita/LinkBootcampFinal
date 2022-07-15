@@ -60,8 +60,6 @@ maddeleri amaçlamaktadır.
 -	**Message Broker :** RabbitMQ
 
 
-  
-## Teşekkür
-- ...
+
 
   
